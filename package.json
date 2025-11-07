@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/pricedb-io-npm.git"
+    "url": "git+https://github.com/TF2-Price-DB/pricedb-io-npm.git"
   },
   "keywords": [
     "tf2",
@@ -41,7 +41,7 @@
   "author": "Your Name",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/pricedb-io-npm/issues"
+    "url": "https://github.com/TF2-Price-DB/pricedb-io-npm/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/pricedb-io-npm#readme"
+  "homepage": "https://github.com/TF2-Price-DB/pricedb-io-npm#readme"
 }
