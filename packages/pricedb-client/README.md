@@ -3,8 +3,6 @@
 [![npm version](https://badge.fury.io/js/@pricedb-io%2Fclient.svg)](https://badge.fury.io/js/@pricedb-io%2Fclient)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-TypeScript SDK for the [pricedb.io](https://pricedb.io/) TF2 Price Database API. Access real-time and historical TF2 item prices with full TypeScript support.
-
 ## 📦 Installation
 
 ```bash
@@ -180,77 +178,3 @@ const client = new PriceDBClient({
   }
 });
 ```
-
-## 📋 API Reference
-
-### Client Methods
-
-- `health()` - Check API and database status
-- `getItems()` - Get all items with SKUs
-- `getLatestPrices()` - Get latest prices for all items
-- `getPrices(options?)` - Get prices with pagination
-- `getItem(sku)` - Get latest price for a specific item
-- `getItemHistory(sku, options?)` - Get price history for an item
-- `getItemStats(sku)` - Get statistics for an item
-- `getItemsBulk(skus)` - Get prices for multiple items
-- `getSnapshot(timestamp)` - Get prices at a specific time
-- `search(options)` - Search for items by name
-- `compareItems(sku1, sku2)` - Compare two items
-- `getCacheStats()` - Get cache and system statistics
-- `getGraphUrl(sku, options?)` - Get URL for price chart
-
-### Types
-
-All TypeScript types are fully exported:
-
-```typescript
-import type { 
-  ItemPrice,
-  Item,
-  ItemStats,
-  SearchResult,
-  ComparisonResult,
-  CacheStats,
-  HealthResponse,
-  PaginationOptions,
-  HistoryOptions,
-  SearchOptions
-} from '@pricedb-io/client';
-```
-
-## 📊 Rate Limiting
-
-The API has rate limiting of **360 requests per minute per IP address**. The client handles this automatically, but be mindful of your request volume.
-
-## 🐛 Error Handling
-
-```typescript
-try {
-  const item = await client.getItem('invalid-sku');
-} catch (error) {
-  if (error instanceof Error) {
-    console.error('Error fetching item:', error.message);
-  }
-}
-```
-
-Common error scenarios:
-- `404` - Item or SKU not found
-- `400` - Invalid or missing parameters
-- `429` - Rate limit exceeded
-- `500` - Internal server error
-
-## 🔗 Links
-
-- [API Documentation](https://pricedb.io/api-docs)
-- [GitHub Repository](https://github.com/YOUR_USERNAME/pricedb-io-npm)
-- [NPM Package](https://www.npmjs.com/package/@pricedb-io/client)
-- [Issue Tracker](https://github.com/YOUR_USERNAME/pricedb-io-npm/issues)
-
-## 📄 License
-
-MIT © [Your Name]
-
-## 🙏 Credits
-
-Built for the TF2 community. Data provided by [pricedb.io](https://pricedb.io/).

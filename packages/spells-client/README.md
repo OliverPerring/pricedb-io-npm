@@ -277,39 +277,3 @@ try {
   }
 }
 ```
-
-Common HTTP status codes:
-- `200` - Success
-- `400` - Bad Request (invalid or missing parameters)
-- `404` - Not Found (resource doesn't exist)
-- `429` - Rate Limit Exceeded
-- `500` - Internal Server Error
-
-## 💡 Best Practices
-
-1. **Cache spell list locally** - The spell list rarely changes
-2. **Use `/spell-analytics` for bulk data** - More efficient than multiple calls
-3. **Respect rate limits** - Implement exponential backoff on 429 errors
-4. **Check service status before heavy usage** - Use `getStats()` or `health()`
-5. **Understand confidence levels** - Low confidence predictions should be used cautiously
-
-## 🔗 Links
-
-- [API Documentation](https://spells.pricedb.io/api-docs)
-- [Spell Search](https://spells.pricedb.io/search)
-- [Market Analytics](https://spells.pricedb.io/analytics)
-- [GitHub Repository](https://github.com/YOUR_USERNAME/pricedb-io-npm)
-- [NPM Package](https://www.npmjs.com/package/@pricedb-io/spells)
-- [Issue Tracker](https://github.com/YOUR_USERNAME/pricedb-io-npm/issues)
-
-## 📄 License
-
-MIT © [Your Name]
-
-## 🙏 Credits
-
-Built for the TF2 community. Data provided by [spells.pricedb.io](https://spells.pricedb.io/).
-
-## ⚠️ Disclaimer
-
-Spell prices are estimates and can never be 100% accurate due to item rarity and limited sample sizes. Always verify prices before trading.
