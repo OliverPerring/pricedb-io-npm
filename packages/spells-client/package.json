@@ -1,0 +1,43 @@
+{
+  "name": "@pricedb-io/spells",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for the spells.pricedb.io TF2 Spell Price API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "tf2",
+    "team-fortress-2",
+    "pricedb",
+    "spells",
+    "trading",
+    "api-client",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/pricedb-io-npm.git",
+    "directory": "packages/spells-client"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/pricedb-io-npm/issues"
+  },
+  "homepage": "https://spells.pricedb.io/",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  }
+}
